@@ -922,9 +922,9 @@ class _Camera360State extends State<Camera360> with WidgetsBindingObserver {
             });
           }
 
-          // Centere dot color
+          // Centere dot color // Colors.white.withValues(alpha: 0.7) FIX
           var centeredDotColor = deviceInCorrectPosition == true
-              ? Colors.white.withValues(alpha: 0.7)
+              ? Colors.white.withOpacity(0.7) 
               : Colors.transparent;
 
           //  Helper dot color depending on device rotation
